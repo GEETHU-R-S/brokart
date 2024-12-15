@@ -18,8 +18,8 @@ Including another URLconf
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('',views.index,name='home'),
-    path('product_list',views.list_products,name='list_product'),
-    path('product_detail/<pk>',views.detail_products,name='detail_products')
+    path('account',views.show_account,name='account'),
+    path('logout',views.sign_out,name='logout'),
+
 
 ]
